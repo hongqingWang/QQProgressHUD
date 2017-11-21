@@ -13,6 +13,9 @@
 		0436E3821FC3F6D900F92743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0436E3811FC3F6D900F92743 /* Assets.xcassets */; };
 		0436E3851FC3F6D900F92743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0436E3831FC3F6D900F92743 /* LaunchScreen.storyboard */; };
 		0436E3881FC3F6D900F92743 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436E3871FC3F6D900F92743 /* main.m */; };
+		0436E3941FC3FC8100F92743 /* MBProgressHUD+QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436E3931FC3FC8100F92743 /* MBProgressHUD+QQ.m */; };
+		0436E3B41FC408C100F92743 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0436E3B31FC408C100F92743 /* MBProgressHUD.bundle */; };
+		44B86A892CC95792E237094C /* libPods-QQProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D68BDD6BEF9EB952C8D3E7C1 /* libPods-QQProgressHUD.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		0436E3841FC3F6D900F92743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0436E3861FC3F6D900F92743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0436E3871FC3F6D900F92743 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0436E3921FC3FC8100F92743 /* MBProgressHUD+QQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+QQ.h"; sourceTree = "<group>"; };
+		0436E3931FC3FC8100F92743 /* MBProgressHUD+QQ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+QQ.m"; sourceTree = "<group>"; };
+		0436E3B31FC408C100F92743 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		96766FDC3B29ED66A2A67F47 /* Pods-QQProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQProgressHUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQProgressHUD/Pods-QQProgressHUD.release.xcconfig"; sourceTree = "<group>"; };
+		D68BDD6BEF9EB952C8D3E7C1 /* libPods-QQProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA07F5805A91D78F0E0BD907 /* Pods-QQProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQProgressHUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQProgressHUD/Pods-QQProgressHUD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B86A892CC95792E237094C /* libPods-QQProgressHUD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +54,8 @@
 			children = (
 				0436E3771FC3F6D900F92743 /* QQProgressHUD */,
 				0436E3761FC3F6D900F92743 /* Products */,
+				741A11AE2EEC92968A191DE2 /* Pods */,
+				35963FFB6C1259DCCB20DCB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +74,7 @@
 				0436E3791FC3F6D900F92743 /* AppDelegate.m */,
 				0436E37B1FC3F6D900F92743 /* ViewController.h */,
 				0436E37C1FC3F6D900F92743 /* ViewController.m */,
+				0436E38E1FC3FC3A00F92743 /* QQProgressHUD */,
 				0436E37E1FC3F6D900F92743 /* Main.storyboard */,
 				0436E3811FC3F6D900F92743 /* Assets.xcassets */,
 				0436E3831FC3F6D900F92743 /* LaunchScreen.storyboard */,
@@ -71,6 +84,33 @@
 			path = QQProgressHUD;
 			sourceTree = "<group>";
 		};
+		0436E38E1FC3FC3A00F92743 /* QQProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0436E3B31FC408C100F92743 /* MBProgressHUD.bundle */,
+				0436E3921FC3FC8100F92743 /* MBProgressHUD+QQ.h */,
+				0436E3931FC3FC8100F92743 /* MBProgressHUD+QQ.m */,
+			);
+			path = QQProgressHUD;
+			sourceTree = "<group>";
+		};
+		35963FFB6C1259DCCB20DCB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D68BDD6BEF9EB952C8D3E7C1 /* libPods-QQProgressHUD.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		741A11AE2EEC92968A191DE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA07F5805A91D78F0E0BD907 /* Pods-QQProgressHUD.debug.xcconfig */,
+				96766FDC3B29ED66A2A67F47 /* Pods-QQProgressHUD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0436E38B1FC3F6D900F92743 /* Build configuration list for PBXNativeTarget "QQProgressHUD" */;
 			buildPhases = (
+				87CFAAF78CAFBB8F29CD1C4E /* [CP] Check Pods Manifest.lock */,
 				0436E3711FC3F6D900F92743 /* Sources */,
 				0436E3721FC3F6D900F92743 /* Frameworks */,
 				0436E3731FC3F6D900F92743 /* Resources */,
+				AF81B19C91AB3F4E8C7A9344 /* [CP] Embed Pods Frameworks */,
+				D9307E352DB58C82C6D78B32 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0436E3851FC3F6D900F92743 /* LaunchScreen.storyboard in Resources */,
+				0436E3B41FC408C100F92743 /* MBProgressHUD.bundle in Resources */,
 				0436E3821FC3F6D900F92743 /* Assets.xcassets in Resources */,
 				0436E3801FC3F6D900F92743 /* Main.storyboard in Resources */,
 			);
@@ -137,11 +181,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87CFAAF78CAFBB8F29CD1C4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QQProgressHUD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF81B19C91AB3F4E8C7A9344 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQProgressHUD/Pods-QQProgressHUD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9307E352DB58C82C6D78B32 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQProgressHUD/Pods-QQProgressHUD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0436E3711FC3F6D900F92743 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0436E3941FC3FC8100F92743 /* MBProgressHUD+QQ.m in Sources */,
 				0436E37D1FC3F6D900F92743 /* ViewController.m in Sources */,
 				0436E3881FC3F6D900F92743 /* main.m in Sources */,
 				0436E37A1FC3F6D900F92743 /* AppDelegate.m in Sources */,
@@ -276,6 +372,7 @@
 		};
 		0436E38C1FC3F6D900F92743 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA07F5805A91D78F0E0BD907 /* Pods-QQProgressHUD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +386,7 @@
 		};
 		0436E38D1FC3F6D900F92743 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96766FDC3B29ED66A2A67F47 /* Pods-QQProgressHUD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
